@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64">
+  <!-- Mark -->
+  <path d="M32 8 V15 M29 10.5 L32 7.5 L35 10.5" stroke="#C77F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 52 L32 15" stroke="#0B0D10" stroke-width="4" stroke-linecap="round"/>
+  <path d="M46 52 L32 15" stroke="#0B0D10" stroke-width="4" stroke-linecap="round"/>
+  <path d="M22 36 H42" stroke="#0B0D10" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="32" cy="36" r="3.6" fill="#C77F1F"/>
+  <!-- Wordmark: for use on light / paper backgrounds -->
+  <text x="66" y="40" font-family="Space Grotesk, Arial, sans-serif" font-size="26" font-weight="600" fill="#0B0D10" letter-spacing="0.5">Arhyn</text>
+</svg>
