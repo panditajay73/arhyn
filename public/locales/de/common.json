@@ -1,0 +1,129 @@
+{
+  "brand": {
+    "name": "Arhyn Technologies",
+    "homeAria": "Arhyn Technologies Startseite"
+  },
+  "nav": {
+    "services": "Services",
+    "industries": "Branchen",
+    "work": "Arbeiten",
+    "team": "Team",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "freeAudit": "Kostenloses Digital-Audit",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "hero": {
+    "eyebrow": "// digitale transformation · ki-automatisierung · individuelle software",
+    "titleBefore": "Technologie, die Ihr Schaufenster in ein",
+    "titleAccent": "System",
+    "titleAfter": " verwandelt.",
+    "description": "Arhyn Technologies hilft Restaurants, Kliniken, Fitnessstudios und unabhängigen Unternehmen, manuelle Offline-Abläufe durch Websites, Software und KI-Automatisierung zu ersetzen, die nach ihrem echten Betrieb gebaut sind.",
+    "secondaryCta": "Unsere Arbeit ansehen",
+    "stats": {
+      "services": { "value": "15+", "label": "angebotene Services" },
+      "industries": { "value": "12", "label": "betreute Branchen" },
+      "studio": { "value": "3", "label": "Ingenieure, ein Studio" }
+    }
+  },
+  "trustedTech": {
+    "aria": "Technologien, mit denen wir bauen",
+    "eyebrow": "// stack, mit dem wir bauen"
+  },
+  "about": {
+    "eyebrow": "// über arhyn",
+    "title": "Wir sind keine reinen Webentwickler. Wir lösen Geschäftsprobleme und schreiben dabei Code.",
+    "bodyOne": "Arhyn Technologies existiert für eine bestimmte Art Unternehmen: das Fitnessstudio, das Mitgliedschaften noch auf Papier verfolgt, die Klinik, die Termine per Telefon bucht, das Restaurant ohne Online-Präsenz. Unternehmen, die gut in dem sind, was sie tun, aber online unsichtbar - oder ineffizient - sind.",
+    "bodyTwo": "Wir bauen die Website, die Software und die Automatisierung, die diese Lücke schließen - und bleiben danach zur Unterstützung dabei. Jede Zusammenarbeit beginnt mit der operativen Realität des Unternehmens, nicht mit einer Vorlage.",
+    "missionTitle": "Mission",
+    "missionText": "Offline-Unternehmen digital-first machen, ohne zu verlieren, was sie stark macht.",
+    "visionTitle": "Vision",
+    "visionText": "Eine Zukunft, in der kein kleines Unternehmen durch veraltete Systeme oder manuelle, repetitive Arbeit ausgebremst wird."
+  },
+  "servicesSection": {
+    "eyebrow": "// was wir bauen",
+    "title": "Fünfzehn Wege, die Lücke zwischen einem Offline-Unternehmen und einem digitalen Unternehmen zu schließen.",
+    "badge": "Service",
+    "problem": "Problem",
+    "solution": "Lösung",
+    "result": "Ergebnis",
+    "explore": "Entdecken"
+  },
+  "whyChoose": {
+    "eyebrow": "// warum arhyn",
+    "title": "Gebaut für Unternehmen, bei denen es wirklich funktionieren muss."
+  },
+  "industriesSection": {
+    "eyebrow": "// branchen, denen wir helfen",
+    "title": "Andere Schaufenster. Dasselbe kaputte Backoffice.",
+    "problemLabel": "Häufiges Problem - ",
+    "solutionLabel": "Wie wir helfen - "
+  },
+  "journeySection": {
+    "eyebrow": "// die transformationsreise",
+    "title": "Von offline zu online, in acht bewussten Schritten."
+  },
+  "projectsSection": {
+    "eyebrow": "// fallstudien",
+    "title": "Echte Systeme, ausgeliefert für echte Unternehmen.",
+    "problemLabel": "Gelöstes Problem - ",
+    "browseMore": "Mehr Projekte ansehen"
+  },
+  "teamSection": {
+    "eyebrow": "// das studio",
+    "title": "Drei Ingenieure. Ein Studio. Keine Zwischenhändler."
+  },
+  "faqSection": {
+    "eyebrow": "// faq",
+    "title": "Fragen, die Geschäftsinhaber wirklich stellen."
+  },
+  "contact": {
+    "eyebrow": "// hier starten",
+    "title": "Kostenloses Digital-Audit buchen.",
+    "description": "Sagen Sie uns, wo Ihr Unternehmen heute steht. Wir sagen Ihnen ehrlich, was zuerst repariert werden sollte - ohne Verpflichtung.",
+    "successTitle": "Anfrage erhalten.",
+    "successMessage": "Wir melden uns innerhalb eines Werktags, um das Audit zu planen.",
+    "labels": {
+      "name": "Name",
+      "business": "Firmenname",
+      "email": "E-Mail",
+      "message": "Was bremst das Unternehmen?"
+    },
+    "placeholders": {
+      "name": "Ihr Name",
+      "business": "z. B. Sunrise Cafe",
+      "email": "you@business.com",
+      "message": "Keine Website, manuelle Buchungen, verstreute Daten..."
+    },
+    "submitIdle": "Audit anfragen",
+    "submitLoading": "Wird gesendet...",
+    "successToast": "Digital-Audit-Anfrage gesendet!",
+    "errorToast": "Senden fehlgeschlagen. Bitte erneut versuchen.",
+    "cards": {
+      "email": "E-Mail",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Direkt mit dem Team chatten",
+      "call": "Anrufen",
+      "callText": "Rufen Sie uns an unter +91 7348115017"
+    }
+  },
+  "footer": {
+    "tagline": "Transforming Businesses Through Technology - digitale Transformation, KI-Automatisierung und individuelle Software für Unternehmen, die noch offline arbeiten.",
+    "navigation": "Navigation",
+    "connect": "Verbinden",
+    "rights": "Alle Rechte vorbehalten.",
+    "built": "Gebaut von Ingenieuren, für Geschäftsinhaber."
+  },
+  "languageSelector": {
+    "label": "Sprache",
+    "aria": "Sprache auswählen"
+  },
+  "scroll": {
+    "top": "Nach oben scrollen",
+    "bottom": "Nach unten scrollen"
+  },
+  "theme": {
+    "toggle": "Theme umschalten"
+  }
+}

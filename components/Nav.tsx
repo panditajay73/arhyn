@@ -2,17 +2,18 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
-import ThemeToggle from "./ThemeToggle";
 const links = [
-  { href: "#services", label: "Services" },
-  { href: "#industries", label: "Industries" },
-  { href: "#work", label: "Work" },
-  { href: "#team", label: "Team" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#services", labelKey: "nav.services" },
+  { href: "#industries", labelKey: "nav.industries" },
+  { href: "#work", labelKey: "nav.work" },
+  { href: "#team", labelKey: "nav.team" },
+  { href: "#faq", labelKey: "nav.faq" },
 ];
 
 export default function Nav() {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -30,9 +31,9 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto max-w-content px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2.5 text-paper" aria-label="Arhyn Technologies home">
+        <a href="#top" className="flex items-center gap-2.5 text-paper" aria-label={t("brand.homeAria")}>
           <Logo className="h-7 w-7 text-paper" />
-          <span className="font-display font-semibold tracking-tight text-lg">Arhyn Technologies</span>
+          <span className="font-display font-semibold tracking-tight text-lg">{t("brand.name")}</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -42,7 +43,7 @@ export default function Nav() {
               href={l.href}
               className="text-sm text-dim hover:text-paper transition-colors"
             >
-              {l.label}
+              {t(l.labelKey)}
             </a>
           ))}
         </div>
@@ -52,14 +53,14 @@ export default function Nav() {
             href="#contact"
             className="magnetic-btn inline-flex items-center rounded-full bg-amber px-5 py-2.5 text-sm font-medium text-ink hover:bg-amber-soft hover:shadow-[0_0_28px_rgba(232,163,61,0.35)]"
           >
-            Free Digital Audit
+            {t("nav.freeAudit")}
           </a>
         </div>
 
         <button
           className="md:hidden text-paper"
           onClick={() => setOpen((v) => !v)}
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? t("nav.closeMenu") : t("nav.openMenu")}
           aria-expanded={open}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -75,7 +76,7 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               className="text-paper text-base"
             >
-              {l.label}
+              {t(l.labelKey)}
             </a>
           ))}
           <a
@@ -83,7 +84,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="mt-2 inline-flex items-center justify-center rounded-full bg-amber px-5 py-3 text-sm font-medium text-ink"
           >
-            Free Digital Audit
+            {t("nav.freeAudit")}
           </a>
         </div>
       )}

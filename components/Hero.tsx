@@ -2,8 +2,28 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Compass } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+  const stats = [
+    {
+      key: "services",
+      value: t("hero.stats.services.value"),
+      label: t("hero.stats.services.label"),
+    },
+    {
+      key: "industries",
+      value: t("hero.stats.industries.value"),
+      label: t("hero.stats.industries.label"),
+    },
+    {
+      key: "studio",
+      value: t("hero.stats.studio.value"),
+      label: t("hero.stats.studio.label"),
+    },
+  ];
+
   return (
     <section id="top" className="relative overflow-hidden pt-40 pb-28 md:pt-52 md:pb-40">
       {/* Ambient circuit background */}
@@ -58,7 +78,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="eyebrow mb-6"
         >
-          // digital transformation · ai automation · custom software
+          {t("hero.eyebrow")}
         </motion.p>
 
         <motion.h1
@@ -67,12 +87,12 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display text-balance max-w-4xl text-[2.6rem] leading-[1.08] font-semibold tracking-tight text-paper sm:text-6xl md:text-7xl"
         >
-          Technology that turns your shopfront into a{" "}
+          {t("hero.titleBefore")}{" "}
           <span className="relative inline-block font-serif italic font-normal text-amber animate-flicker">
-            system
+            {t("hero.titleAccent")}
             <span className="absolute -inset-x-2 -inset-y-1 -z-10 rounded-full bg-amber/10 blur-2xl" />
           </span>
-          .
+          {t("hero.titleAfter")}
         </motion.h1>
 
         <motion.p
@@ -81,9 +101,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.22 }}
           className="mt-8 max-w-xl text-base md:text-lg text-dim"
         >
-          Arhyn Technologies helps restaurants, clinics, gyms, and independent
-          businesses trade manual, offline operations for websites, software,
-          and AI automation built around how they actually run.
+          {t("hero.description")}
         </motion.p>
 
         <motion.div
@@ -96,7 +114,7 @@ export default function Hero() {
             href="#contact"
             className="magnetic-btn group inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3.5 text-sm font-medium text-ink hover:bg-amber-soft hover:shadow-[0_0_32px_rgba(232,163,61,0.4)]"
           >
-            Free Digital Audit
+            {t("nav.freeAudit")}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </a>
           <a
@@ -104,7 +122,7 @@ export default function Hero() {
             className="magnetic-btn inline-flex items-center gap-2 rounded-full border border-line px-6 py-3.5 text-sm font-medium text-paper hover:border-amber/50 hover:bg-ink-soft"
           >
             <Compass size={16} />
-            View Our Work
+            {t("hero.secondaryCta")}
           </a>
         </motion.div>
 
@@ -114,14 +132,10 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-16 grid grid-cols-3 gap-6 max-w-md border-t border-line pt-6"
         >
-          {[
-            ["15+", "services offered"],
-            ["12", "industries served"],
-            ["3", "engineers, one studio"],
-          ].map(([n, l]) => (
-            <div key={l}>
-              <div className="font-display text-2xl font-semibold text-paper">{n}</div>
-              <div className="mt-1 text-xs text-dim leading-snug">{l}</div>
+          {stats.map((stat) => (
+            <div key={stat.key}>
+              <div className="font-display text-2xl font-semibold text-paper">{stat.value}</div>
+              <div className="mt-1 text-xs text-dim leading-snug">{stat.label}</div>
             </div>
           ))}
         </motion.div>

@@ -1,20 +1,26 @@
+"use client";
+
 import Reveal from "./Reveal";
-import { whyChoose } from "@/lib/data";
+import { getData } from "@/lib/getData";
 import {
   Zap, Layers, Sparkles, Building2, Cloud,
   Search, ShieldCheck, Smartphone, LifeBuoy, Wrench,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const icons = [Zap, Layers, Sparkles, Building2, Cloud, Search, ShieldCheck, Smartphone, LifeBuoy, Wrench];
 
 export default function WhyChoose() {
+  const { i18n, t } = useTranslation();
+  const { whyChoose } = getData(i18n.resolvedLanguage ?? i18n.language);
+
   return (
     <section className="py-28 md:py-36 border-t border-line bg-ink-soft/20">
       <div className="mx-auto max-w-content px-6 md:px-10">
         <Reveal className="max-w-2xl mb-16">
-          <p className="eyebrow mb-4">// why arhyn</p>
+          <p className="eyebrow mb-4">{t("whyChoose.eyebrow")}</p>
           <h2 className="font-display text-3xl md:text-5xl font-semibold text-paper text-balance">
-            Built for businesses that need it to actually work.
+            {t("whyChoose.title")}
           </h2>
         </Reveal>
 

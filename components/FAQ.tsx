@@ -3,10 +3,13 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Reveal from "./Reveal";
-import { faqs } from "@/lib/data";
+import { getData } from "@/lib/getData";
 
 export default function FAQ() {
+  const { i18n, t } = useTranslation();
+  const { faqs } = getData(i18n.resolvedLanguage ?? i18n.language);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -14,9 +17,9 @@ export default function FAQ() {
       <div className="mx-auto max-w-content px-6 md:px-10 grid md:grid-cols-12 gap-10 md:gap-16">
         <div className="md:col-span-4">
           <Reveal>
-            <p className="eyebrow mb-4">// faq</p>
+            <p className="eyebrow mb-4">{t("faqSection.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-paper text-balance">
-              Questions business owners actually ask.
+              {t("faqSection.title")}
             </h2>
           </Reveal>
         </div>

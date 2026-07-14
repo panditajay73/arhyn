@@ -1,0 +1,129 @@
+{
+  "brand": {
+    "name": "Arhyn Technologies",
+    "homeAria": "Inicio de Arhyn Technologies"
+  },
+  "nav": {
+    "services": "Servicios",
+    "industries": "Industrias",
+    "work": "Trabajo",
+    "team": "Equipo",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "freeAudit": "Auditoría digital gratis",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "hero": {
+    "eyebrow": "// transformación digital · automatización con ia · software a medida",
+    "titleBefore": "Tecnología que convierte tu escaparate en un",
+    "titleAccent": "sistema",
+    "titleAfter": ".",
+    "description": "Arhyn Technologies ayuda a restaurantes, clínicas, gimnasios y negocios independientes a cambiar operaciones manuales y offline por sitios web, software y automatización con IA construidos alrededor de cómo realmente trabajan.",
+    "secondaryCta": "Ver nuestro trabajo",
+    "stats": {
+      "services": { "value": "15+", "label": "servicios ofrecidos" },
+      "industries": { "value": "12", "label": "industrias atendidas" },
+      "studio": { "value": "3", "label": "ingenieros, un estudio" }
+    }
+  },
+  "trustedTech": {
+    "aria": "Tecnologías con las que construimos",
+    "eyebrow": "// stack con el que construimos"
+  },
+  "about": {
+    "eyebrow": "// sobre arhyn",
+    "title": "No somos solo desarrolladores web. Resolvemos problemas de negocio y además escribimos código.",
+    "bodyOne": "Arhyn Technologies existe para un tipo concreto de negocio: el gimnasio que aún lleva membresías en papel, la clínica que agenda por teléfono, el restaurante sin presencia online. Negocios buenos en lo que hacen, pero invisibles - o ineficientes - en internet.",
+    "bodyTwo": "Construimos el sitio, el software y la automatización que cierran esa brecha - y seguimos para darle soporte. Cada proyecto empieza por la realidad operativa del negocio, no por una plantilla.",
+    "missionTitle": "Misión",
+    "missionText": "Ayudar a negocios offline a volverse digital-first sin perder lo que los hace funcionar.",
+    "visionTitle": "Visión",
+    "visionText": "Un futuro donde ningún pequeño negocio quede frenado por sistemas obsoletos o trabajo manual repetitivo."
+  },
+  "servicesSection": {
+    "eyebrow": "// lo que construimos",
+    "title": "Quince formas de cerrar la brecha entre un negocio offline y uno digital.",
+    "badge": "Servicio",
+    "problem": "Problema",
+    "solution": "Solución",
+    "result": "Resultado",
+    "explore": "Explorar"
+  },
+  "whyChoose": {
+    "eyebrow": "// por qué arhyn",
+    "title": "Construido para negocios que necesitan que realmente funcione."
+  },
+  "industriesSection": {
+    "eyebrow": "// industrias que ayudamos",
+    "title": "Escaparates distintos. El mismo back office roto.",
+    "problemLabel": "Problema común - ",
+    "solutionLabel": "Cómo ayudamos - "
+  },
+  "journeySection": {
+    "eyebrow": "// el camino de transformación",
+    "title": "De offline a online, en ocho pasos deliberados."
+  },
+  "projectsSection": {
+    "eyebrow": "// casos de estudio",
+    "title": "Sistemas reales, entregados para negocios reales.",
+    "problemLabel": "Problema resuelto - ",
+    "browseMore": "Ver más proyectos"
+  },
+  "teamSection": {
+    "eyebrow": "// el estudio",
+    "title": "Tres ingenieros. Un estudio. Sin intermediarios."
+  },
+  "faqSection": {
+    "eyebrow": "// faq",
+    "title": "Preguntas que los dueños de negocio realmente hacen."
+  },
+  "contact": {
+    "eyebrow": "// empieza aquí",
+    "title": "Reserva una auditoría digital gratis.",
+    "description": "Cuéntanos dónde está hoy el negocio. Te diremos, honestamente, qué vale la pena arreglar primero - sin obligación.",
+    "successTitle": "Solicitud recibida.",
+    "successMessage": "Responderemos en un día hábil para agendar la auditoría.",
+    "labels": {
+      "name": "Nombre",
+      "business": "Nombre del negocio",
+      "email": "Email",
+      "message": "¿Qué está frenando el negocio?"
+    },
+    "placeholders": {
+      "name": "Tu nombre",
+      "business": "p. ej. Sunrise Cafe",
+      "email": "you@business.com",
+      "message": "Sin sitio web, reservas manuales, registros dispersos..."
+    },
+    "submitIdle": "Solicitar la auditoría",
+    "submitLoading": "Enviando...",
+    "successToast": "¡Solicitud de auditoría digital enviada!",
+    "errorToast": "No se pudo enviar. Inténtalo de nuevo.",
+    "cards": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Chatea directamente con el equipo",
+      "call": "Hacer una llamada",
+      "callText": "Llámanos al +91 7348115017"
+    }
+  },
+  "footer": {
+    "tagline": "Transforming Businesses Through Technology - transformación digital, automatización con IA y software a medida para negocios que aún operan offline.",
+    "navigation": "Navegación",
+    "connect": "Conectar",
+    "rights": "Todos los derechos reservados.",
+    "built": "Construido por ingenieros, para dueños de negocio."
+  },
+  "languageSelector": {
+    "label": "Idioma",
+    "aria": "Seleccionar idioma"
+  },
+  "scroll": {
+    "top": "Ir arriba",
+    "bottom": "Ir abajo"
+  },
+  "theme": {
+    "toggle": "Cambiar tema"
+  }
+}

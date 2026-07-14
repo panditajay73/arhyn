@@ -1,0 +1,129 @@
+{
+  "brand": {
+    "name": "Arhyn Technologies",
+    "homeAria": "Arhyn Technologies home"
+  },
+  "nav": {
+    "services": "Services",
+    "industries": "Industries",
+    "work": "Work",
+    "team": "Team",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "freeAudit": "Free Digital Audit",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "eyebrow": "// digital transformation · ai automation · custom software",
+    "titleBefore": "Technology that turns your shopfront into a",
+    "titleAccent": "system",
+    "titleAfter": ".",
+    "description": "Arhyn Technologies helps restaurants, clinics, gyms, and independent businesses trade manual, offline operations for websites, software, and AI automation built around how they actually run.",
+    "secondaryCta": "View Our Work",
+    "stats": {
+      "services": { "value": "15+", "label": "services offered" },
+      "industries": { "value": "12", "label": "industries served" },
+      "studio": { "value": "3", "label": "engineers, one studio" }
+    }
+  },
+  "trustedTech": {
+    "aria": "Technologies we build with",
+    "eyebrow": "// stack we build with"
+  },
+  "about": {
+    "eyebrow": "// about arhyn",
+    "title": "We're not web developers. We're business problem-solvers who happen to write code.",
+    "bodyOne": "Arhyn Technologies exists for a specific kind of business: the gym that still tracks memberships on paper, the clinic booking appointments over the phone, the restaurant with no online presence at all. Businesses that are good at what they do, but invisible - or inefficient - online.",
+    "bodyTwo": "We build the website, the software, and the automation that closes that gap - then stay on to support it. Every engagement starts with the operational reality of the business, not a template.",
+    "missionTitle": "Mission",
+    "missionText": "Help offline businesses become digital-first, without losing what makes them work.",
+    "visionTitle": "Vision",
+    "visionText": "A future where no small business is held back by outdated systems or manual, repetitive work."
+  },
+  "servicesSection": {
+    "eyebrow": "// what we build",
+    "title": "Fifteen ways to close the gap between an offline business and a digital one.",
+    "badge": "Service",
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result",
+    "explore": "Explore"
+  },
+  "whyChoose": {
+    "eyebrow": "// why arhyn",
+    "title": "Built for businesses that need it to actually work."
+  },
+  "industriesSection": {
+    "eyebrow": "// industries we help",
+    "title": "Different shopfronts. The same broken back office.",
+    "problemLabel": "Common problem - ",
+    "solutionLabel": "How we help - "
+  },
+  "journeySection": {
+    "eyebrow": "// the transformation journey",
+    "title": "From offline to online, in eight deliberate steps."
+  },
+  "projectsSection": {
+    "eyebrow": "// case studies",
+    "title": "Real systems, shipped for real businesses.",
+    "problemLabel": "Problem solved - ",
+    "browseMore": "Browse More Projects"
+  },
+  "teamSection": {
+    "eyebrow": "// the studio",
+    "title": "Three engineers. One studio. No middlemen."
+  },
+  "faqSection": {
+    "eyebrow": "// faq",
+    "title": "Questions business owners actually ask."
+  },
+  "contact": {
+    "eyebrow": "// start here",
+    "title": "Book a Free Digital Audit.",
+    "description": "Tell us where the business stands today. We'll tell you, honestly, what's worth fixing first - no obligation attached.",
+    "successTitle": "Request received.",
+    "successMessage": "We'll reply within one business day to schedule the audit.",
+    "labels": {
+      "name": "Name",
+      "business": "Business name",
+      "email": "Email",
+      "message": "What's slowing the business down?"
+    },
+    "placeholders": {
+      "name": "Your name",
+      "business": "e.g. Sunrise Cafe",
+      "email": "you@business.com",
+      "message": "No website, manual bookings, scattered records..."
+    },
+    "submitIdle": "Request the Audit",
+    "submitLoading": "Sending...",
+    "successToast": "Digital audit request sent!",
+    "errorToast": "Unable to send. Please try again.",
+    "cards": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Chat with the team directly",
+      "call": "Make a call",
+      "callText": "Call us at +91 7348115017"
+    }
+  },
+  "footer": {
+    "tagline": "Transforming Businesses Through Technology - digital transformation, AI automation, and custom software for businesses still operating offline.",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "built": "Built by engineers, for business owners."
+  },
+  "languageSelector": {
+    "label": "Language",
+    "aria": "Select language"
+  },
+  "scroll": {
+    "top": "Scroll to top",
+    "bottom": "Scroll to bottom"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  }
+}

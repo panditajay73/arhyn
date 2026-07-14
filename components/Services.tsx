@@ -1,17 +1,22 @@
+"use client";
+
 import Reveal from "./Reveal";
-import { services } from "@/lib/data";
+import { getData } from "@/lib/getData";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Services() {
+  const { i18n, t } = useTranslation();
+  const { services } = getData(i18n.resolvedLanguage ?? i18n.language);
+
   return (
     <section id="services" className="py-28 md:py-36 border-t border-line">
       <div className="mx-auto max-w-content px-6 md:px-10">
         <Reveal className="max-w-3xl mb-16">
-          <p className="eyebrow mb-4">{"// what we build"}</p>
+          <p className="eyebrow mb-4">{t("servicesSection.eyebrow")}</p>
 
           <h2 className="font-display text-3xl md:text-5xl font-semibold text-paper text-balance">
-            Fifteen ways to close the gap between an offline business and a
-            digital one.
+            {t("servicesSection.title")}
           </h2>
         </Reveal>
 
@@ -40,7 +45,7 @@ export default function Services() {
                   <div className="h-2.5 w-2.5 rounded-full bg-amber shadow-[0_0_12px_rgba(232,163,61,0.8)] transition-all duration-500 group-hover:scale-150" />
 
                   <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-wire">
-                    Service
+                    {t("servicesSection.badge")}
                   </span>
                 </div>
 
@@ -58,7 +63,7 @@ export default function Services() {
                     <div className="absolute -left-[18px] top-[7px] h-2 w-2 rounded-full bg-wire" />
 
                     <p className="text-[11px] uppercase tracking-widest font-mono text-wire mb-1">
-                      Problem
+                      {t("servicesSection.problem")}
                     </p>
 
                     <p className="text-sm text-dim leading-6">
@@ -70,7 +75,7 @@ export default function Services() {
                     <div className="absolute -left-[18px] top-[7px] h-2 w-2 rounded-full bg-amber" />
 
                     <p className="text-[11px] uppercase tracking-widest font-mono text-amber mb-1">
-                      Solution
+                      {t("servicesSection.solution")}
                     </p>
 
                     <p className="text-sm text-dim leading-6">
@@ -82,7 +87,7 @@ export default function Services() {
                     <div className="absolute -left-[18px] top-[7px] h-2 w-2 rounded-full bg-paper/70" />
 
                     <p className="text-[11px] uppercase tracking-widest font-mono text-paper/60 mb-1">
-                      Result
+                      {t("servicesSection.result")}
                     </p>
 
                     <p className="text-sm text-dim leading-6">
@@ -109,7 +114,7 @@ export default function Services() {
 
                 {/* CTA */}
                 <div className="mt-7 flex items-center gap-2 text-sm font-medium text-amber opacity-0 transition-all duration-500 group-hover:translate-x-1 group-hover:opacity-100">
-                  Explore
+                  {t("servicesSection.explore")}
                   <ArrowRight
                     size={16}
                     className="transition-transform group-hover:translate-x-1"

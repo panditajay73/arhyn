@@ -1,0 +1,129 @@
+{
+  "brand": {
+    "name": "Arhyn Technologies",
+    "homeAria": "Arhyn Technologies होम"
+  },
+  "nav": {
+    "services": "सेवाएं",
+    "industries": "इंडस्ट्रीज़",
+    "work": "काम",
+    "team": "टीम",
+    "faq": "FAQ",
+    "contact": "संपर्क",
+    "freeAudit": "फ्री डिजिटल ऑडिट",
+    "openMenu": "मेन्यू खोलें",
+    "closeMenu": "मेन्यू बंद करें"
+  },
+  "hero": {
+    "eyebrow": "// डिजिटल ट्रांसफॉर्मेशन · एआई ऑटोमेशन · कस्टम सॉफ्टवेयर",
+    "titleBefore": "ऐसी तकनीक जो आपके shopfront को एक",
+    "titleAccent": "सिस्टम",
+    "titleAfter": " में बदल देती है.",
+    "description": "Arhyn Technologies restaurants, clinics, gyms और independent businesses को manual, offline operations से websites, software और AI automation की ओर ले जाता है, जो उनके असली कामकाज के अनुसार बने होते हैं.",
+    "secondaryCta": "हमारा काम देखें",
+    "stats": {
+      "services": { "value": "15+", "label": "सेवाएं उपलब्ध" },
+      "industries": { "value": "12", "label": "इंडस्ट्रीज़ सर्व्ड" },
+      "studio": { "value": "3", "label": "इंजीनियर्स, एक स्टूडियो" }
+    }
+  },
+  "trustedTech": {
+    "aria": "जिन technologies से हम build करते हैं",
+    "eyebrow": "// हमारा tech stack"
+  },
+  "about": {
+    "eyebrow": "// arhyn के बारे में",
+    "title": "हम सिर्फ web developers नहीं हैं. हम business problem-solvers हैं जो code भी लिखते हैं.",
+    "bodyOne": "Arhyn Technologies एक खास तरह के business के लिए है: वह gym जो अभी भी memberships paper पर track करता है, वह clinic जो phone पर appointments book करता है, वह restaurant जिसकी online presence नहीं है. ऐसे businesses जो अपने काम में अच्छे हैं, पर online invisible - या inefficient - हैं.",
+    "bodyTwo": "हम वह website, software और automation बनाते हैं जो इस gap को बंद करता है - और फिर support के लिए साथ रहते हैं. हर engagement business की operational reality से शुरू होती है, template से नहीं.",
+    "missionTitle": "मिशन",
+    "missionText": "Offline businesses को digital-first बनाना, बिना उनकी असली ताकत खोए.",
+    "visionTitle": "विजन",
+    "visionText": "एक ऐसा future जहां कोई small business outdated systems या manual, repetitive काम से पीछे न रहे."
+  },
+  "servicesSection": {
+    "eyebrow": "// हम क्या बनाते हैं",
+    "title": "Offline business और digital business के बीच gap बंद करने के पंद्रह तरीके.",
+    "badge": "सेवा",
+    "problem": "समस्या",
+    "solution": "समाधान",
+    "result": "परिणाम",
+    "explore": "देखें"
+  },
+  "whyChoose": {
+    "eyebrow": "// arhyn क्यों",
+    "title": "उन businesses के लिए बनाया गया जिन्हें सच में काम करने वाला system चाहिए."
+  },
+  "industriesSection": {
+    "eyebrow": "// जिन industries की हम मदद करते हैं",
+    "title": "अलग shopfronts. वही टूटा हुआ back office.",
+    "problemLabel": "आम समस्या - ",
+    "solutionLabel": "हम कैसे मदद करते हैं - "
+  },
+  "journeySection": {
+    "eyebrow": "// transformation journey",
+    "title": "Offline से online तक, आठ सोच-समझकर रखे गए steps में."
+  },
+  "projectsSection": {
+    "eyebrow": "// case studies",
+    "title": "Real businesses के लिए shipped real systems.",
+    "problemLabel": "हल की गई समस्या - ",
+    "browseMore": "और projects देखें"
+  },
+  "teamSection": {
+    "eyebrow": "// studio",
+    "title": "तीन engineers. एक studio. कोई middlemen नहीं."
+  },
+  "faqSection": {
+    "eyebrow": "// faq",
+    "title": "वे सवाल जो business owners सच में पूछते हैं."
+  },
+  "contact": {
+    "eyebrow": "// यहां से शुरू करें",
+    "title": "फ्री डिजिटल ऑडिट बुक करें.",
+    "description": "हमें बताएं business आज कहां खड़ा है. हम ईमानदारी से बताएंगे कि पहले क्या fix करना worthwhile है - बिना किसी obligation के.",
+    "successTitle": "Request मिल गई.",
+    "successMessage": "Audit schedule करने के लिए हम एक business day के भीतर reply करेंगे.",
+    "labels": {
+      "name": "नाम",
+      "business": "Business name",
+      "email": "Email",
+      "message": "Business को क्या slow कर रहा है?"
+    },
+    "placeholders": {
+      "name": "आपका नाम",
+      "business": "जैसे Sunrise Cafe",
+      "email": "you@business.com",
+      "message": "Website नहीं, manual bookings, scattered records..."
+    },
+    "submitIdle": "Audit request करें",
+    "submitLoading": "भेजा जा रहा है...",
+    "successToast": "Digital audit request भेज दी गई!",
+    "errorToast": "भेज नहीं सके. कृपया फिर कोशिश करें.",
+    "cards": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Team से सीधे chat करें",
+      "call": "Call करें",
+      "callText": "+91 7348115017 पर call करें"
+    }
+  },
+  "footer": {
+    "tagline": "Transforming Businesses Through Technology - offline businesses के लिए digital transformation, AI automation और custom software.",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "rights": "सर्वाधिकार सुरक्षित.",
+    "built": "Engineers द्वारा, business owners के लिए बनाया गया."
+  },
+  "languageSelector": {
+    "label": "भाषा",
+    "aria": "भाषा चुनें"
+  },
+  "scroll": {
+    "top": "ऊपर जाएं",
+    "bottom": "नीचे जाएं"
+  },
+  "theme": {
+    "toggle": "Theme बदलें"
+  }
+}

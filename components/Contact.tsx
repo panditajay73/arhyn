@@ -2,57 +2,54 @@
 
 import { useRef, useState } from "react";
 import { Mail, MessageCircle, CalendarClock, Send } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import toast from "react-hot-toast";
 import Reveal from "./Reveal";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
-const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
-const formRef = useRef<HTMLFormElement>(null);
-const handleSubmit = async (
-  e: React.FormEvent<HTMLFormElement>
-) => {
-  e.preventDefault();
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ) => {
+    e.preventDefault();
 
-  if (!formRef.current) return;
+    if (!formRef.current) return;
 
-  setLoading(true);
+    setLoading(true);
 
-  try {
-    await emailjs.sendForm(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-      formRef.current,
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-    );
+    try {
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
 
-    setSubmitted(true);
-    formRef.current.reset();
-  } catch (error) {
-    console.error(error);
-    alert("Failed to send request.");
-  }
+      setSubmitted(true);
+      formRef.current.reset();
+      toast.success(t("contact.successToast"));
+    } catch {
+      toast.error(t("contact.errorToast"));
+    } finally {
+      setLoading(false);
+    }
+  };
 
-  setLoading(false);
-};
-
-// console.log({
-//   service: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-//   template: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-//   publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-// });
   return (
     <section id="contact" className="py-28 md:py-36 border-t border-line bg-ink-soft/20">
       <div className="mx-auto max-w-content px-6 md:px-10">
         <Reveal className="max-w-2xl mb-16">
-          <p className="eyebrow mb-4">// start here</p>
+          <p className="eyebrow mb-4">{t("contact.eyebrow")}</p>
           <h2 className="font-display text-3xl md:text-5xl font-semibold text-paper text-balance">
-            Book a Free Digital Audit.
+            {t("contact.title")}
           </h2>
           <p className="text-dim mt-4 max-w-lg">
-            Tell us where the business stands today. We'll tell you, honestly,
-            what's worth fixing first — no obligation attached.
+            {t("contact.description")}
           </p>
         </Reveal>
 
@@ -60,21 +57,21 @@ const handleSubmit = async (
           <Reveal className="md:col-span-7">
             {submitted ? (
               <div className="rounded-2xl border border-amber/30 bg-amber/5 p-8">
-                <p className="font-display text-lg text-paper mb-2">Request received.</p>
+                <p className="font-display text-lg text-paper mb-2">{t("contact.successTitle")}</p>
                 <p className="text-sm text-dim">
-                  We'll reply within one business day to schedule the audit.
+                  {t("contact.successMessage")}
                 </p>
               </div>
             ) : (
               <form
-  ref={formRef}
-  onSubmit={handleSubmit}
-  className="space-y-5"
->
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="space-y-5"
+              >
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="name" className="block text-xs font-mono text-dim mb-2 uppercase tracking-wide">
-                      Name
+                      {t("contact.labels.name")}
                     </label>
                     <input
                       id="name"
@@ -82,12 +79,12 @@ const handleSubmit = async (
                       required
                       type="text"
                       className="w-full rounded-xl border border-line bg-ink px-4 py-3 text-sm text-paper placeholder:text-dim/60 focus:border-amber/60 focus:outline-none"
-                      placeholder="Your name"
+                      placeholder={t("contact.placeholders.name")}
                     />
                   </div>
                   <div>
                     <label htmlFor="business" className="block text-xs font-mono text-dim mb-2 uppercase tracking-wide">
-                      Business name
+                      {t("contact.labels.business")}
                     </label>
                     <input
                       id="business"
@@ -95,13 +92,13 @@ const handleSubmit = async (
                       required
                       type="text"
                       className="w-full rounded-xl border border-line bg-ink px-4 py-3 text-sm text-paper placeholder:text-dim/60 focus:border-amber/60 focus:outline-none"
-                      placeholder="e.g. Sunrise Cafe"
+                      placeholder={t("contact.placeholders.business")}
                     />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-xs font-mono text-dim mb-2 uppercase tracking-wide">
-                    Email
+                    {t("contact.labels.email")}
                   </label>
                   <input
                     id="email"
@@ -109,29 +106,29 @@ const handleSubmit = async (
                     required
                     type="email"
                     className="w-full rounded-xl border border-line bg-ink px-4 py-3 text-sm text-paper placeholder:text-dim/60 focus:border-amber/60 focus:outline-none"
-                    placeholder="you@business.com"
+                    placeholder={t("contact.placeholders.email")}
                   />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-xs font-mono text-dim mb-2 uppercase tracking-wide">
-                    What's slowing the business down?
+                    {t("contact.labels.message")}
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={4}
                     className="w-full rounded-xl border border-line bg-ink px-4 py-3 text-sm text-paper placeholder:text-dim/60 focus:border-amber/60 focus:outline-none resize-none"
-                    placeholder="No website, manual bookings, scattered records..."
+                    placeholder={t("contact.placeholders.message")}
                   />
                 </div>
                 <button
-  type="submit"
-  disabled={loading}
-  className="magnetic-btn inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3.5 text-sm font-medium text-ink hover:bg-amber-soft disabled:opacity-50"
->
-  <Send size={16} />
-  {loading ? "Sending..." : "Request the Audit"}
-</button>
+                  type="submit"
+                  disabled={loading}
+                  className="magnetic-btn inline-flex items-center gap-2 rounded-full bg-amber px-6 py-3.5 text-sm font-medium text-ink hover:bg-amber-soft disabled:opacity-50"
+                >
+                  <Send size={16} />
+                  {loading ? t("contact.submitLoading") : t("contact.submitIdle")}
+                </button>
               </form>
             )}
           </Reveal>
@@ -143,7 +140,7 @@ const handleSubmit = async (
             >
               <Mail size={18} className="text-amber shrink-0" />
               <div>
-                <p className="text-sm text-paper">Email</p>
+                <p className="text-sm text-paper">{t("contact.cards.email")}</p>
                 <p className="text-xs text-dim">pandeyajaysdr@gmail.com</p>
               </div>
             </a>
@@ -155,8 +152,8 @@ const handleSubmit = async (
             >
               <MessageCircle size={18} className="text-amber shrink-0" />
               <div>
-                <p className="text-sm text-paper">WhatsApp</p>
-                <p className="text-xs text-dim">Chat with the team directly</p>
+                <p className="text-sm text-paper">{t("contact.cards.whatsapp")}</p>
+                <p className="text-xs text-dim">{t("contact.cards.whatsappText")}</p>
               </div>
             </a>
             <a
@@ -167,8 +164,8 @@ const handleSubmit = async (
             >
               <CalendarClock size={18} className="text-amber shrink-0" />
               <div>
-                <p className="text-sm text-paper">Make a call</p>
-                <p className="text-xs text-dim">Call us at +91 7348115017</p>
+                <p className="text-sm text-paper">{t("contact.cards.call")}</p>
+                <p className="text-xs text-dim">{t("contact.cards.callText")}</p>
               </div>
             </a>
           </Reveal>

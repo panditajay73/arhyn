@@ -1,14 +1,20 @@
+"use client";
+
 import Reveal from "./Reveal";
-import { journey } from "@/lib/data";
+import { getData } from "@/lib/getData";
+import { useTranslation } from "react-i18next";
 
 export default function Journey() {
+  const { i18n, t } = useTranslation();
+  const { journey } = getData(i18n.resolvedLanguage ?? i18n.language);
+
   return (
     <section className="py-28 md:py-36 border-t border-line bg-ink-soft/20">
       <div className="mx-auto max-w-content px-6 md:px-10">
         <Reveal className="max-w-2xl mb-20">
-          <p className="eyebrow mb-4">// the transformation journey</p>
+          <p className="eyebrow mb-4">{t("journeySection.eyebrow")}</p>
           <h2 className="font-display text-3xl md:text-5xl font-semibold text-paper text-balance">
-            From offline to online, in eight deliberate steps.
+            {t("journeySection.title")}
           </h2>
         </Reveal>
 

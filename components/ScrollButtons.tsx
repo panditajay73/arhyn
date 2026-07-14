@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { ArrowUp, ArrowDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function ScrollButtons() {
+  const { t } = useTranslation();
   const [showTop, setShowTop] = useState(false);
   const [showBottom, setShowBottom] = useState(true);
 
@@ -46,7 +48,7 @@ export default function ScrollButtons() {
             ? "translate-y-0 opacity-100"
             : "pointer-events-none translate-y-4 opacity-0"
         }`}
-        aria-label="Scroll to top"
+        aria-label={t("scroll.top")}
       >
         <ArrowUp size={18} className="text-paper" />
       </button>
@@ -58,7 +60,7 @@ export default function ScrollButtons() {
             ? "translate-y-0 opacity-100"
             : "pointer-events-none translate-y-4 opacity-0"
         }`}
-        aria-label="Scroll to bottom"
+        aria-label={t("scroll.bottom")}
       >
         <ArrowDown size={18} className="text-paper" />
       </button>

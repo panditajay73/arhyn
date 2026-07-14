@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Instrument_Serif, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
-import { toast } from "react-hot-toast";
-import ThemeProvider from "@/components/ThemeProvider";
+import I18nProvider from "@/i18n/i18n";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -104,8 +103,6 @@ const jsonLd = {
   ],
   sameAs: [] as string[],
 };
-// toast.success("Digital audit request sent!");
-// toast.error("Unable to send. Please try again.");
 export default function RootLayout({
   children,
 }: {
@@ -114,6 +111,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${inter.variable} ${grotesk.variable} ${instrumentSerif.variable} ${plexMono.variable}`}
     >
       <head>
@@ -122,9 +120,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-body antialiased">{children}
-      <Toaster position="top-right" />
-      
+      <body className="font-body antialiased">
+        <I18nProvider>
+          {children}
+          <Toaster position="top-right" />
+        </I18nProvider>
       </body>
     </html>
   );

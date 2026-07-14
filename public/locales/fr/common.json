@@ -1,0 +1,129 @@
+{
+  "brand": {
+    "name": "Arhyn Technologies",
+    "homeAria": "Accueil Arhyn Technologies"
+  },
+  "nav": {
+    "services": "Services",
+    "industries": "Secteurs",
+    "work": "Réalisations",
+    "team": "Équipe",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "freeAudit": "Audit digital gratuit",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "hero": {
+    "eyebrow": "// transformation digitale · automatisation ia · logiciel sur mesure",
+    "titleBefore": "La technologie qui transforme votre vitrine en",
+    "titleAccent": "système",
+    "titleAfter": ".",
+    "description": "Arhyn Technologies aide restaurants, cliniques, salles de sport et entreprises indépendantes à remplacer les opérations manuelles et offline par des sites, logiciels et automatisations IA conçus autour de leur vraie façon de travailler.",
+    "secondaryCta": "Voir nos réalisations",
+    "stats": {
+      "services": { "value": "15+", "label": "services proposés" },
+      "industries": { "value": "12", "label": "secteurs accompagnés" },
+      "studio": { "value": "3", "label": "ingénieurs, un studio" }
+    }
+  },
+  "trustedTech": {
+    "aria": "Technologies avec lesquelles nous construisons",
+    "eyebrow": "// stack avec lequel nous construisons"
+  },
+  "about": {
+    "eyebrow": "// à propos d'arhyn",
+    "title": "Nous ne sommes pas seulement des développeurs web. Nous résolvons des problèmes business et écrivons du code.",
+    "bodyOne": "Arhyn Technologies existe pour un type précis d'entreprise : la salle de sport qui suit encore ses abonnements sur papier, la clinique qui prend les rendez-vous par téléphone, le restaurant sans aucune présence en ligne. Des entreprises excellentes dans leur métier, mais invisibles - ou inefficaces - en ligne.",
+    "bodyTwo": "Nous construisons le site, le logiciel et l'automatisation qui referment cet écart - puis nous restons pour les soutenir. Chaque mission commence par la réalité opérationnelle de l'entreprise, pas par un modèle.",
+    "missionTitle": "Mission",
+    "missionText": "Aider les entreprises offline à devenir digital-first, sans perdre ce qui les fait fonctionner.",
+    "visionTitle": "Vision",
+    "visionText": "Un futur où aucune petite entreprise n'est freinée par des systèmes dépassés ou du travail manuel répétitif."
+  },
+  "servicesSection": {
+    "eyebrow": "// ce que nous construisons",
+    "title": "Quinze façons de fermer l'écart entre une entreprise offline et une entreprise digitale.",
+    "badge": "Service",
+    "problem": "Problème",
+    "solution": "Solution",
+    "result": "Résultat",
+    "explore": "Explorer"
+  },
+  "whyChoose": {
+    "eyebrow": "// pourquoi arhyn",
+    "title": "Conçu pour les entreprises qui ont besoin que ça fonctionne vraiment."
+  },
+  "industriesSection": {
+    "eyebrow": "// secteurs que nous aidons",
+    "title": "Des vitrines différentes. Le même back-office cassé.",
+    "problemLabel": "Problème fréquent - ",
+    "solutionLabel": "Comment nous aidons - "
+  },
+  "journeySection": {
+    "eyebrow": "// le parcours de transformation",
+    "title": "De l'offline à l'online, en huit étapes délibérées."
+  },
+  "projectsSection": {
+    "eyebrow": "// études de cas",
+    "title": "De vrais systèmes, livrés pour de vraies entreprises.",
+    "problemLabel": "Problème résolu - ",
+    "browseMore": "Voir plus de projets"
+  },
+  "teamSection": {
+    "eyebrow": "// le studio",
+    "title": "Trois ingénieurs. Un studio. Aucun intermédiaire."
+  },
+  "faqSection": {
+    "eyebrow": "// faq",
+    "title": "Les questions que les dirigeants posent vraiment."
+  },
+  "contact": {
+    "eyebrow": "// commencez ici",
+    "title": "Réservez un audit digital gratuit.",
+    "description": "Dites-nous où en est votre entreprise aujourd'hui. Nous vous dirons honnêtement ce qui vaut la peine d'être corrigé en premier - sans engagement.",
+    "successTitle": "Demande reçue.",
+    "successMessage": "Nous répondrons sous un jour ouvré pour planifier l'audit.",
+    "labels": {
+      "name": "Nom",
+      "business": "Nom de l'entreprise",
+      "email": "Email",
+      "message": "Qu'est-ce qui ralentit l'entreprise ?"
+    },
+    "placeholders": {
+      "name": "Votre nom",
+      "business": "ex. Sunrise Cafe",
+      "email": "you@business.com",
+      "message": "Pas de site, réservations manuelles, données dispersées..."
+    },
+    "submitIdle": "Demander l'audit",
+    "submitLoading": "Envoi...",
+    "successToast": "Demande d'audit digital envoyée !",
+    "errorToast": "Envoi impossible. Veuillez réessayer.",
+    "cards": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Discutez directement avec l'équipe",
+      "call": "Passer un appel",
+      "callText": "Appelez-nous au +91 7348115017"
+    }
+  },
+  "footer": {
+    "tagline": "Transforming Businesses Through Technology - transformation digitale, automatisation IA et logiciel sur mesure pour les entreprises qui opèrent encore offline.",
+    "navigation": "Navigation",
+    "connect": "Connexion",
+    "rights": "Tous droits réservés.",
+    "built": "Construit par des ingénieurs, pour des dirigeants."
+  },
+  "languageSelector": {
+    "label": "Langue",
+    "aria": "Choisir la langue"
+  },
+  "scroll": {
+    "top": "Faire défiler vers le haut",
+    "bottom": "Faire défiler vers le bas"
+  },
+  "theme": {
+    "toggle": "Changer le thème"
+  }
+}
